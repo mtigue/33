@@ -1,0 +1,2182 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title>Stanford Catholic</title> 
+    
+<!-----begin siteloader---------->        
+        <script>
+window.onload = function() {
+
+   document.getElementById("siteLoader2").style.display = "none";
+   document.getElementById("hider2").style.display = "block";
+}
+</script>
+
+
+
+<!------------BEGIN SITELOADER-------------->
+
+<div id="siteLoader2">
+
+<div style="position: fixed;
+  top: 50%;
+  lefts: 50%; width:100%; text-align:center;
+  margin-top: -12px;
+  margin-left: -12px;
+  background-color:#550707 !important;">
+  
+  
+  
+   <img src="img2/loader.gif" width="24" height="24">  
+  
+   </div>
+
+  </div> 
+  
+<!---end siteloader-->    
+
+
+
+
+    
+    
+    <!--
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png"/>
+    -->
+    
+    
+
+    <script>
+		if (window.screen.height==568) { // iPhone 4"
+		document.querySelector("meta[name=viewport]").content="width=320.1";
+		}
+    </script>
+   
+    
+  <!--
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+-->
+    
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/jquery.mobile-1.3.1.min.css" />
+   <link rel="stylesheet" href="assets/css/style1.css">
+ <!--    <link rel="stylesheet" href="assets/css/apprise.min.css" />  -->
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    
+    
+    <link rel="stylesheet" href="stanford.css"><!--themerollser theme---> 
+    <link rel="stylesheet" href="web4u.css"> 
+    <link rel="stylesheet" href="http://web4uonline.com/stanford/web4u-out.css">
+  
+    
+ 
+    <!-- JS -->
+	<script src="phonegap.js"></script>
+	
+	    
+    <script src="assets/js/jquery-1.8.2.min.js"></script>
+    <script src="assets/js/jquery.mobile-1.3.0.min.js"></script>
+   	<script src="assets/js/screen.js"></script>
+   
+<!-- 	
+	<script src="assets/js/apprise-1.5.min.js"></script> 
+-->	
+	
+	<script src="readinglink.js"></script>
+	<script src="web4u.js"></script> 
+	<script src="http://www.web4uonline.com/stanford/web4u-out.js"></script> 
+
+
+
+    
+    
+
+<!----scripts to speed things up / scroll to top----------------->
+<script>
+
+$(":jqmData(role='collapsible')", $.mobile.activePage).click(function(e) {
+    if (! $(this).hasClass('ui-collapsible-heading-collapsed')) {
+        $.mobile.silentScroll($(this).offset().top);
+    }
+});
+
+
+</script>
+
+<script>
+	
+	// make collapsible items scroll to top on open
+	$("div.ui-collapsible-set").live("expand", function(e) {
+    var top = $(e.target).offset().top;
+        if ($(window).scrollTop() > top)
+            $(window).scrollTop(top);
+});
+		
+	</script>
+
+
+       
+<script>
+	
+	//attempts to speed things up
+	$.mobile.defaultPageTransition   = 'none';
+	$.mobile.defaultDialogTransition = 'none';
+	$.mobile.buttonMarkup.hoverDelay = 0;
+	$document.bind("touchstart", function(event){});
+
+</script>
+
+	
+<!-------------------------------------------------->
+
+  
+</head>
+<body style="background-color:#550707;">
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////HOME PAGE/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<div data-role="page" id="homepage" data-theme="a" class="pagebg">
+
+
+<div data-role='header' class='page-header' data-theme="b" >
+<div class='title'>Stanford<img style='margin:-4px 9px -6px 11px !important;' src='img2/logo.png'>Catholic
+</div>
+</div>   
+
+
+
+	<!-- slider -->
+	<script>
+		jQuery(function(){
+			jQuery('#camera_wrap').camera({	
+					
+				loader				: 'false',
+				navigation			: false,
+				navigationHover		: false,
+				fx					: 'scrollRight'	
+		
+			});
+		});
+	</script>
+	<!-- /slider -->
+	
+	
+<script src="http://web4uonline.com/stanford/slideshow.js"></script>	
+	
+	
+	
+	 	<div data-role="header" data-theme="a"> 
+	<div class="pagetitle">Catholic Community @ Stanford</div> 
+</div> 
+    
+	<div class="shadow1box">
+		<img src="assets/images/shadow1.png" class="shadow1" alt="shadow">
+	</div>
+	
+	 
+    
+    <div class="content-padd">    
+    
+<script src="http://web4uonline.com/stanford/homemessage.js"></script>
+
+
+ 
+<!-- navigation -->
+		<ul data-role="listview" data-inset="true" id="listview" style="margin-bottom:0px; margin-top:-10px !important;">
+
+
+
+
+	<script src="http://web4uonline.com/stanford/homenav.js"></script>		 
+
+
+
+
+
+
+
+
+
+
+
+    </ul>
+        
+        
+ <!-- /navigation --> 
+ 
+ 
+</div><!-- /content padd -->
+</div><!-- /content role-->        
+   
+	
+	
+<!---for external home---->	
+	
+	
+
+    
+<!-- footer -->
+<script src="http://web4uonline.com/stanford/inc-footer.js"></script>
+<!-- /footer -->
+
+
+	
+</div><!-- /page -->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////HOME PAGE/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////Mass Times/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<div data-role="page" id="schedule" data-theme="a" class="pagebg">
+	  
+<script src="inc-header.js"></script>
+  
+            
+<!----------------------BEGIN EXTERNAL FETCH--------------------->
+
+<script>
+
+function getSchedule() { 
+
+ $.ajax({
+  type: "GET",
+  
+  cache: false, 	
+  url: "http://web4uonline.com/stanford/schedule.php",
+//  data: "", 
+   dataType: "json",
+  success: function(schedule) 
+  {
+ document.getElementById("resultsSchedule").innerHTML=schedule.schedule;  
+  }
+  
+  
+});
+
+}
+
+</script>  
+
+<script type="text/javascript">getSchedule();</script>
+
+<div id="resultsSchedule">getting data...internet connection required</div>
+
+ 
+ <!----------------------END EXTERNALFETCH--------------------->
+	
+	
+	<!-- footer -->
+<script src="http://web4uonline.com/stanford/inc-footer.js"></script>  
+	<!-- /footer -->
+	
+</div><!-- /page -->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////END Mass Times/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////Registration/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<div data-role="page" id="registration" data-theme="a" class="pagebg">
+	  
+<script src="inc-header.js"></script>
+
+<div data-role="content">
+    
+        
+    
+  	
+  		  	<div data-role="header" data-theme="a"> 
+			<div class="pagetitle">CC@S Regisration</div> 
+			</div> 
+
+
+    
+
+
+    <div class="shadow1box"><img src="assets/images/shadow1.png" class="shadow1" alt="shadow"></div>
+	<!-- /banner & title -->
+    
+    <div class="content-padd" >
+  
+    <div class="callout">
+    
+    <script type="text/javascript" src="http://form.jotform.co/jsform/32485479878880"></script>
+    
+    </div> <!---end callout--->       
+	
+	
+	
+	
+	 </div><!-- /content padd -->
+	</div><!-- /content -->
+
+	
+	
+	<!-- footer -->  
+<script src="http://web4uonline.com/stanford/inc-footer.js"></script>  
+	<!-- /footer -->
+	
+</div><!-- /page -->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////END Registration/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////Begin Time & Talent/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<div data-role="page" id="talent" data-theme="a" class="pagebg">
+	  
+<script src="inc-header.js"></script>
+  
+            
+<!----------------------BEGIN EXTERNAL FETCH--------------------->
+
+<script>
+
+function gettalent() { 
+
+ $.ajax({
+  type: "GET",
+  
+  cache: false, 	
+  url: "http://web4uonline.com/stanford/talent.php",
+//  data: "", 
+   dataType: "json",
+  success: function(talent) 
+  {
+ document.getElementById("resultstalent").innerHTML=talent.talent;  
+  }
+  
+  
+});
+
+}
+
+</script>  
+
+<script type="text/javascript">gettalent();</script>
+
+<div id="resultstalent">getting data...internet connection required</div>
+
+ 
+ <!----------------------END EXTERNALFETCH--------------------->
+	
+	
+	<!-- footer -->
+<script src="http://web4uonline.com/stanford/inc-footer.js"></script>  
+	<!-- /footer -->
+	
+</div><!-- /page -->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////Time & Talent/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////SUNDAY/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="sunday" data-theme="a" class="pagebg">
+<script src="inc-header.js"></script>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+</head>
+
+<div data-role="content">
+  
+     <script src="http://web4uonline.com/stanford/sunday.js"></script>
+    
+    
+    
+	</div><!-- /content -->  	 
+	<!-- footer -->
+<script src="http://web4uonline.com/stanford/inc-footer.js"></script>
+	<!-- /footer -->
+</div><!-- /page -->
+
+
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////END Sunday/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+
+
+
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////BEGIN MASS TIMES/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<div data-role="page" id="mass" data-theme="a" class="pagebg">
+	  
+<script src="inc-header.js"></script>
+
+<div data-role="content">
+    
+    <!-- banner & title -->
+	<div class="bannerContainer">
+		<img src="http://web4uonline.com/stanford/tops/mass.jpg" class="banner">	
+    </div>
+    
+    
+  	
+  		  	<div data-role="header" data-theme="a"> 
+			<div class="pagetitle">Mass Times</div> 
+			</div> 
+
+
+    
+
+
+    <div class="shadow1box"><img src="assets/images/shadow1.png" class="shadow1" alt="shadow"></div>
+	<!-- /banner & title -->
+    
+    <div class="content-padd" >
+     
+
+  
+            
+<!----------------------BEGIN EXTERNAL FETCH--------------------->
+
+<script>
+
+function getmass() { 
+
+ $.ajax({
+  type: "GET",
+  
+  cache: false, 	
+  url: "http://web4uonline.com/stanford/mass.php",
+//  data: "", 
+   dataType: "json",
+  success: function(mass) 
+  {
+ document.getElementById("resultsmass").innerHTML=mass.mass;  
+  }
+  
+  
+});
+
+}
+
+</script>  
+
+<script type="text/javascript">getmass();</script>
+
+<div id="resultsmass">getting data...internet connection required</div>
+
+ 
+ <!----------------------END EXTERNALFETCH--------------------->
+	    </div><!-- /content padd -->
+	</div><!-- /content -->
+
+	
+	<!-- footer -->
+<script src="http://web4uonline.com/stanford/inc-footer.js"></script>
+	<!-- /footer -->
+	
+</div><!-- /page -->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////END MASS TIMES/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////CONTACT/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<div data-role="page" id="contact" data-theme="a" class="pagebg">
+	  
+  <script src="inc-header.js"></script>
+  
+  <div data-role="content">
+    
+    <!-- banner & title -->
+		
+
+  	  	
+  		  	<div data-role="header" data-theme="a"> 
+			<div class="pagetitle">Contact & Parking & Directions</div> 
+			</div> 
+
+
+  	
+  	
+  	
+        <div class="shadow1box"><img src="assets/images/shadow1.png" class="shadow1" alt="shadow"></div>
+	<!-- /banner & title -->
+    
+    <div class="content-padd">
+
+  
+            
+            
+<!----------------------BEGIN EXTERNAL FETCH--------------------->
+
+<script>
+
+function getContact() { 
+
+ $.ajax({
+  type: "GET",
+  
+  cache: false, 	
+  url: "http://web4uonline.com/stanford/contact.php",
+//  data: "", 
+   dataType: "json",
+  success: function(contact) 
+  {
+ document.getElementById("resultsContact").innerHTML=contact.contact;  
+  }
+  
+  
+});
+
+}
+
+</script>  
+
+
+<script type="text/javascript">getContact();</script>
+
+<div id="resultsContact">getting data...internet connection required</div>
+
+</div><!-- /content padd -->
+	</div><!-- /content -->
+
+ 
+ <!----------------------END EXTERNALFETCH--------------------->
+            
+    	
+	<!-- footer -->
+<script src="http://web4uonline.com/stanford/inc-footer.js"></script>
+	<!-- /footer -->
+
+	
+</div><!-- /page -->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////CONTACT/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////NEWS & EVENTS/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+<div data-role="page" id="news" data-theme="a" class="pagebg">
+	  
+  <script src="inc-header.js"></script>  
+    
+      
+<!----------------------BEGIN EXTERNAL FETCH--------------------->
+
+<script>
+
+function getNews() { 
+
+ $.ajax({
+  type: "GET",
+  
+  cache: false, 	
+  url: "http://web4uonline.com/stanford/news.php",
+//  data: "", 
+   dataType: "json",
+  success: function(news) 
+  {
+ document.getElementById("resultsNews").innerHTML=news.news;
+  
+  }
+  
+  
+});
+
+}
+</script>  
+
+<script type="text/javascript">getNews();</script>
+<div id="resultsNews">getting data...internet connection required</div>
+ <!----------------------END EXTERNALFETCH--------------------->
+	
+	
+<!-- footer -->
+<script src="http://web4uonline.com/stanford/inc-footer.js"></script>
+<!-- /footer -->
+
+
+</div><!-- /page -->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////END NEWS & EVENTS/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////All Page Navigation/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="navigation2" data-theme="a" class="pagebg">
+	<script src="inc-header.js"></script>
+
+<div data-role="content">
+	
+<!----------------------BEGIN EXTERNAL FETCH--------------------->
+<script>
+function getNavigation() { 
+ $.ajax({
+  type: "GET",
+  cache: false, 	
+  url: "http://web4uonline.com/stanford/navigation.php",
+//  data: "", 
+   dataType: "json",
+  success: function(navigation) 
+  {
+ document.getElementById("resultsNavigation").innerHTML=navigation.navigation; 
+ 
+  }
+});
+}
+</script>  
+
+
+<script type="text/javascript">getNavigation();</script>
+<div id="resultsNavigation">getting data...internet connection required</div>
+<!----------------------END EXTERNALFETCH--------------------->
+	
+	
+<!-- footer -->
+<script src="http://web4uonline.com/stanford/inc-footer.js"></script>
+<!-- /footer -->	
+
+
+</div>
+</div><!-- /page -->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////END All Navigation/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////FAITH FORMATION NAV/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<div data-role="page" id="faith" data-theme="a" class="pagebg">
+<script src="inc-header.js"></script>
+
+<!----------------------BEGIN EXTERNAL FETCH--------------------->
+<script>
+function getfaith() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/stanford/faith.php",
+//  data: "", 
+dataType: "json", success: function(faith) 
+{document.getElementById("resultsfaith").innerHTML=faith.faith;
+
+
+}
+});
+}
+</script>  
+
+
+<script type="text/javascript">getfaith();</script>
+<div id="resultsfaith">getting data...internet connection required</div>
+<!----------------------END EXTERNALFETCH--------------------->
+  	   
+	
+	<!-- footer -->
+<script src="http://web4uonline.com/stanford/inc-footer.js"></script>
+	<!-- /footer -->
+
+	
+</div><!-- /page -->
+
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////END FAITH FORMATION NAV/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--////////////////////////////////////MEDIA NAV/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<div data-role="page" id="media" data-theme="a" class="pagebg">
+<script src="inc-header.js"></script>
+
+<!----------------------BEGIN EXTERNAL FETCH--------------------->
+<script>
+function getmedia() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/stanford/media.php",
+//  data: "", 
+dataType: "json", success: function(media) 
+{document.getElementById("resultsmedia").innerHTML=media.media;}
+});
+}
+</script>  
+
+
+<script type="text/javascript">getmedia();</script>
+<div id="resultsmedia">getting data...internet connection required</div>
+<!----------------------END EXTERNALFETCH--------------------->
+  	   
+	
+	<!-- footer -->
+<script src="http://web4uonline.com/stanford/inc-footer.js"></script>
+	<!-- /footer -->
+
+	
+</div><!-- /page -->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////END MEDIA NAV/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////ALUMNI/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<div data-role="page" id="alumni" data-theme="a" class="pagebg">
+	  
+  <script src="inc-header.js"></script>
+  
+            
+            
+<!----------------------BEGIN EXTERNAL FETCH--------------------->
+
+<script>
+
+function getalumni() { 
+
+ $.ajax({
+  type: "GET",
+  
+  cache: false, 	
+  url: "http://web4uonline.com/stanford/alumni.php",
+//  data: "", 
+   dataType: "json",
+  success: function(alumni) 
+  {
+ document.getElementById("resultsalumni").innerHTML=alumni.alumni;  
+  }
+  
+  
+});
+
+}
+
+</script>  
+
+
+<script type="text/javascript">getalumni();</script>
+
+<div id="resultsalumni">getting data...internet connection required</div>
+
+ 
+ <!----------------------END EXTERNALFETCH--------------------->
+            
+    	
+	<!-- footer -->
+<script src="http://web4uonline.com/stanford/inc-footer.js"></script>
+	<!-- /footer -->
+
+	
+</div><!-- /page -->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////END ALUMNI/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////DONATE/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<div data-role="page" id="donate" data-theme="a" class="pagebg">
+<script src="inc-header.js"></script>
+
+  <div data-role="content">
+    
+ 
+		<!-- banner & title -->
+	<div class="bannerContainer">
+		<img src="tops/collection.jpg" class="banner">	
+    </div>
+
+
+  	  	
+  		  	<div data-role="header" data-theme="a"> 
+			<div class="pagetitle">Donate</div> 
+			</div> 
+
+
+  	
+  	
+  	
+        <div class="shadow1box"><img src="assets/images/shadow1.png" class="shadow1" alt="shadow"></div>
+	<!-- /banner & title -->
+    
+    <div class="content-padd">
+
+<!----------------------BEGIN EXTERNAL FETCH--------------------->
+<script>
+function getDonate() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/stanford/donate.php",
+//  data: "", 
+dataType: "json", success: function(donate) 
+{document.getElementById("resultsDonate").innerHTML=donate.donate;}
+});
+}
+</script>  
+
+
+<script type="text/javascript">getDonate();</script>
+<div id="resultsDonate">getting data...internet connection required</div>
+<!----------------------END EXTERNALFETCH--------------------->
+ 
+ 
+     </div><!-- /content padd -->
+	</div><!-- /content -->
+
+	  
+	<!-- footer -->
+<script src="http://web4uonline.com/stanford/inc-footer.js"></script>
+	<!-- /footer -->
+	
+</div><!-- /page -->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////END DONATE/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////PASTOR's REFLECTION/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<div data-role="page" id="reflection" data-theme="a" class="pagebg">
+<script src="inc-header.js"></script>
+<!----------------------BEGIN EXTERNAL FETCH--------------------->
+<script>
+function getReflection() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/stanford/reflection.php",
+//  data: "", 
+dataType: "json", success: function(reflection) 
+{document.getElementById("resultsReflection").innerHTML=reflection.reflection;}
+});
+}
+</script>  
+
+
+<script type="text/javascript">getReflection();</script>
+<div id="resultsReflection">getting data...internet connection required</div>
+<!----------------------END EXTERNALFETCH--------------------->
+ 
+	  
+	<!-- footer -->
+<script src="http://web4uonline.com/stanford/inc-footer.js"></script>
+	<!-- /footer -->
+	
+</div><!-- /page -->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////PASTOR's REFLECTION/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////////SONGS/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<div data-role="page" id="songs" data-theme="a" class="pagebg">
+<script src="inc-header.js"></script>
+<!----------------------BEGIN EXTERNAL FETCH--------------------->
+<script>
+function getmusic() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/stanford/music.php",
+//  data: "", 
+dataType: "json", success: function(music) 
+{document.getElementById("resultsmusic").innerHTML=music.music;}
+});
+}
+</script>  
+
+
+<script type="text/javascript">getmusic();</script>
+<div id="resultsmusic">getting data...internet connection required</div>
+<!----------------------END EXTERNALFETCH--------------------->
+ 
+	  
+	<!-- footer -->
+<script src="http://web4uonline.com/stanford/inc-footer.js"></script>
+	<!-- /footer -->
+	
+</div><!-- /page -->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////SONGS/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////////ANNOUCEMENTS/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<div data-role="page" id="announcements" data-theme="a" class="pagebg">
+<script src="inc-header.js"></script>
+<!----------------------BEGIN EXTERNAL FETCH--------------------->
+<script>
+function getannouncements() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/stanford/announcements.php",
+//  data: "", 
+dataType: "json", success: function(announcements) 
+{document.getElementById("resultsannouncements").innerHTML=announcements.announcements;}
+});
+}
+</script>  
+
+
+<script type="text/javascript">getannouncements();</script>
+<div id="resultsannouncements">getting data...internet connection required</div>
+<!----------------------END EXTERNALFETCH--------------------->
+ 
+	  
+	<!-- footer -->
+<script src="http://web4uonline.com/stanford/inc-footer.js"></script>
+	<!-- /footer -->
+	
+</div><!-- /page -->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////ANNOUNCEMENTS/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////////2nd COLLECTION/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////--
+
+<div data-role="page" id="secondCollection">
+<script src="http://www.web4uonline.com/newman/app/inc-header.js"></script>
+<!----------------------BEGIN EXTERNAL FETCH---------------------
+<script>
+function getsecondCollection() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/stanford/secondCollection.php",
+//  data: "", 
+dataType: "json", success: function(secondCollection) 
+{document.getElementById("resultssecondCollection").innerHTML=secondCollection.secondCollection;}
+});
+}
+</script>  
+
+
+<script type="text/javascript">getsecondCollection();</script>
+<div id="resultssecondCollection">getting data...internet connection required</div>
+<!----------------------END EXTERNALFETCH--------------------->
+ 
+	  
+	<!-- footer --
+<script src="http://web4uonline.com/stanford/inc-footer.js"></script>
+	<!-- /footer --
+	
+</div><!-- /page -->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////2nd COLLECTIOn/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////////ORDER OF MASS/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<div data-role="page" id="orderMass" data-theme="a" class="pagebg">
+<script src="inc-header.js"></script>
+<!----------------------BEGIN EXTERNAL FETCH--------------------->
+<script>
+function getorderMass() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/stanford/orderMass.php",
+//  data: "", 
+dataType: "json", success: function(orderMass) 
+{document.getElementById("resultsorderMass").innerHTML=orderMass.orderMass;}
+});
+}
+</script>  
+
+
+<script type="text/javascript">getorderMass();</script>
+<div id="resultsorderMass">getting data...internet connection required</div>
+<!----------------------END EXTERNALFETCH--------------------->
+ 
+	  
+	<!-- footer -->
+<script src="http://web4uonline.com/stanford/inc-footer.js"></script>
+	<!-- /footer -->
+	
+</div><!-- /page -->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////ORDER OF MASS/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////EXAMINATION/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<div data-role="page" id="guideConfession" data-theme="a" class="pagebg">
+<script src="inc-header.js"></script>
+ 
+       
+<!----------------------BEGIN EXTERNAL FETCH--------------------->
+<script>
+function getexamination() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/stanford/examination.php",
+//  data: "", 
+dataType: "json", success: function(examination) 
+{document.getElementById("resultsexamination").innerHTML=examination.examination;}
+});
+}
+</script>  
+
+
+<script type="text/javascript">getexamination();</script>
+<div id="resultsexamination">getting data...internet connection required</div>
+<!----------------------END EXTERNALFETCH--------------------->
+   
+   
+   
+   
+	
+	<!-- footer -->
+<script src="http://web4uonline.com/stanford/inc-footer.js"></script>
+	<!-- /footer -->
+
+	
+</div><!-- /page -->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////EXAMINATION/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////RETREAT/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<div data-role="page" id="retreat" data-theme="a" class="pagebg">
+<script src="inc-header.js"></script>
+ 
+       
+<!----------------------BEGIN EXTERNAL FETCH--------------------->
+<script>
+function getretreat() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/stanford/retreat.php",
+//  data: "", 
+dataType: "json", success: function(retreat) 
+{document.getElementById("resultsretreat").innerHTML=retreat.retreat;}
+});
+}
+</script>  
+
+
+<script type="text/javascript">getretreat();</script>
+<div id="resultsretreat">getting data...internet connection required</div>
+<!----------------------END EXTERNALFETCH--------------------->
+   
+   
+   
+   
+	
+	<!-- footer -->
+<script src="http://web4uonline.com/stanford/inc-footer.js"></script>
+	<!-- /footer -->
+
+	
+</div><!-- /page -->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////END RETREAT/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////BIBLE STUDY/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<div data-role="page" id="biblestudy" data-theme="a" class="pagebg">
+<script src="inc-header.js"></script> 
+   
+<!----------------------BEGIN EXTERNAL FETCH--------------------->
+<script>
+function getbiblestudy() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/stanford/biblestudy.php",
+//  data: "", 
+dataType: "json", success: function(biblestudy) 
+{document.getElementById("resultsbiblestudy").innerHTML=biblestudy.biblestudy;}
+});
+}
+</script>  
+
+<script type="text/javascript">getbiblestudy();</script>
+<div id="resultsbiblestudy">getting data...internet connection required</div>
+<!----------------------END EXTERNALFETCH--------------------->
+   <!-- footer -->
+<script src="http://web4uonline.com/stanford/inc-footer.js"></script>
+	<!-- /footer -->
+</div><!-- /page -->
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////END BIBLE STUDY/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////EXTRA 1/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<div data-role="page" id="extra1" data-theme="a" class="pagebg">
+<script src="inc-header.js"></script> 
+   
+<!----------------------BEGIN EXTERNAL FETCH--------------------->
+<script>
+function getextra1() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/stanford/extra1.php",
+//  data: "", 
+dataType: "json", success: function(extra1) 
+{document.getElementById("resultsextra1").innerHTML=extra1.extra1;}
+});
+}
+</script>  
+
+<script type="text/javascript">getextra1();</script>
+<div id="resultsextra1">getting data...internet connection required</div>
+<!----------------------END EXTERNALFETCH--------------------->
+   <!-- footer -->
+<script src="http://web4uonline.com/stanford/inc-footer.js"></script>
+	<!-- /footer -->
+</div><!-- /page -->
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////END EXTRA 1/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////EXTRA 2/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<div data-role="page" id="extra2" data-theme="a" class="pagebg">
+<script src="inc-header.js"></script> 
+   
+<!----------------------BEGIN EXTERNAL FETCH--------------------->
+<script>
+function getextra2() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/stanford/extra2.php",
+//  data: "", 
+dataType: "json", success: function(extra2) 
+{document.getElementById("resultsextra2").innerHTML=extra2.extra2;}
+});
+}
+</script>  
+
+<script type="text/javascript">getextra2();</script>
+<div id="resultsextra2">getting data...internet connection required</div>
+<!----------------------END EXTERNALFETCH--------------------->
+   <!-- footer -->
+<script src="http://web4uonline.com/stanford/inc-footer.js"></script>
+	<!-- /footer -->
+</div><!-- /page -->
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////END EXTRA 2/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////EXTRA 3/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<div data-role="page" id="extra3" data-theme="a" class="pagebg">
+<script src="inc-header.js"></script> 
+   
+<!----------------------BEGIN EXTERNAL FETCH--------------------->
+<script>
+function getextra3() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/stanford/extra3.php",
+//  data: "", 
+dataType: "json", success: function(extra3) 
+{document.getElementById("resultsextra3").innerHTML=extra3.extra3;}
+});
+}
+</script>  
+
+<script type="text/javascript">getextra3();</script>
+<div id="resultsextra3">getting data...internet connection required</div>
+<!----------------------END EXTERNALFETCH--------------------->
+   <!-- footer -->
+<script src="http://web4uonline.com/stanford/inc-footer.js"></script>
+	<!-- /footer -->
+</div><!-- /page -->
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////END EXTRA 3/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////EXTRA 4/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<div data-role="page" id="extra4" data-theme="a" class="pagebg">
+<script src="inc-header.js"></script> 
+   
+<!----------------------BEGIN EXTERNAL FETCH--------------------->
+<script>
+function getextra4() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/stanford/extra4.php",
+//  data: "", 
+dataType: "json", success: function(extra4) 
+{document.getElementById("resultsextra4").innerHTML=extra4.extra4;}
+});
+}
+</script>  
+
+<script type="text/javascript">getextra4();</script>
+<div id="resultsextra4">getting data...internet connection required</div>
+<!----------------------END EXTERNALFETCH--------------------->
+   <!-- footer -->
+<script src="http://web4uonline.com/stanford/inc-footer.js"></script>
+	<!-- /footer -->
+</div><!-- /page -->
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////END EXTRA 4/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////EXTRA 5/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////END EXTRA 5/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="extra5" data-theme="a" class="pagebg">
+<script src="inc-header.js"></script>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+</head>
+
+<div data-role="content">
+  
+     <script src="http://web4uonline.com/stanford/extra5.js"></script>
+    
+	</div><!-- /content -->  	 
+	<!-- footer -->
+<script src="http://web4uonline.com/stanford/inc-footer.js"></script>
+	<!-- /footer -->
+</div><!-- /page -->
+
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////EXTRA 6/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="extra6" data-theme="a" class="pagebg">
+<script src="inc-header.js"></script>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+</head>
+
+<div data-role="content">
+  
+     <script src="http://www.web4uonline.com/stanford/extra6.js"></script>
+    
+	</div><!-- /content -->  	 
+	<!-- footer -->
+<script src="http://web4uonline.com/stanford/inc-footer.js"></script>
+	<!-- /footer -->
+</div><!-- /page -->
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////END EXTRA 6/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////EXTRA 7/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="extra7" data-theme="a" class="pagebg">
+<script src="inc-header.js"></script>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+</head>
+
+<div data-role="content">
+  
+     <script src="http://www.web4uonline.com/stanford/extra7.js"></script>
+    
+	</div><!-- /content -->  	 
+	<!-- footer -->
+<script src="http://www.web4uonline.com/stanford/inc-footer.js"></script>
+	<!-- /footer -->
+</div><!-- /page -->
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////END EXTRA 7/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////PARISH PERKS/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////--
+
+<div data-role="page" id="perks" data-theme="a" class="pagebg"> 
+<script src="inc-header.js"></script>
+ 
+       
+<!----------------------BEGIN EXTERNAL FETCH---------------------
+<script>
+function getperks() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/stanford/perks.php",
+//  data: "", 
+dataType: "json", success: function(perks) 
+{document.getElementById("resultsperks").innerHTML=perks.perks;}
+});
+}
+</script>  
+
+
+<script type="text/javascript">getperks();</script>
+<div id="resultsperks">getting data...internet connection required</div>
+<!----------------------END EXTERNALFETCH--------------------->
+   
+   
+   
+   
+	
+	<!-- footer --
+<script src="http://web4uonline.com/stanford/inc-footer.js"></script>
+	<!-- /footer --
+
+	
+</div><!-- /page -->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////END PARISH PERKS//////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////SPONSORS/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////--
+
+<div data-role="page" id="sponsors" data-theme="a" class="pagebg"> 
+<script src="inc-header.js"></script>
+ 
+       
+<!----------------------BEGIN EXTERNAL FETCH---------------------
+<script>
+function getsponsors() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/stanford/sponsors.php",
+//  data: "", 
+dataType: "json", success: function(sponsors) 
+{document.getElementById("resultssponsors").innerHTML=sponsors.sponsors;}
+});
+}
+</script>  
+
+
+<script type="text/javascript">getsponsors();</script>
+<div id="resultssponsors">getting data...internet connection required</div>
+<!----------------------END EXTERNALFETCH--------------------->
+   
+   
+   
+   
+	
+	<!-- footer --
+<script src="http://web4uonline.com/stanford/inc-footer.js"></script>
+	<!-- /footer --
+
+	
+</div><!-- /page -->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////SPONSORS//////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+                                                    
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////ABOUT THE APP/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<div data-role="page" id="app" data-theme="a" class="pagebg"> 
+<script src="inc-header.js"></script>
+ 
+       
+<!----------------------BEGIN EXTERNAL FETCH--------------------->
+<script>
+function getapp() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/stanford/app.php",
+//  data: "", 
+dataType: "json", success: function(app) 
+{document.getElementById("resultsapp").innerHTML=app.app;}
+});
+}
+</script>  
+
+
+<script type="text/javascript">getapp();</script>
+<div id="resultsapp">getting data...internet connection required</div>
+<!----------------------END EXTERNALFETCH--------------------->
+   
+   
+   
+   
+	
+	<!-- footer -->
+<script src="http://web4uonline.com/stanford/inc-footer.js"></script>
+	<!-- /footer -->
+
+	
+</div><!-- /page -->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////END ABOUT THE APP//////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////PRAYERS/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<div data-role="page" id="prayers" data-theme="a" class="pagebg">
+<script src="inc-header.js"></script>
+ 
+
+<div data-role="content">
+    
+   
+  	
+  		<div data-role="header" data-theme="a"> 
+			<div class="pagetitle">Prayers</div> 
+			</div> 
+
+
+  	
+  	
+        <div class="shadow1box">
+			<img src="assets/images/shadow1.png" class="shadow1" alt="shadow"></div>
+	<!-- /banner & title -->
+    
+    <div class="content-padd">
+            
+           
+            
+            
+<div data-role='collapsible-set' data-theme="a"><!---the set --->
+
+
+
+
+<div data-role='collapsible'>
+<h3>Our Father</h3>
+					
+<p>		
+Our Father who art in heaven, <br>
+Hallowed be thy name.  <br>
+Thy kingdom come. <br>
+Thy will be done on earth, as it is in heaven. <br>
+Give us this day our daily bread, <br>
+and forgive us our trespasses, <br>
+as we forgive those who trespass against us, <br>
+and lead us not into temptation, <br>
+but deliver us from evil.</p>			
+</div>				
+					
+
+
+<div data-role='collapsible'>
+					<h3>Hail Mary</h3>
+					
+<p>						
+Hail Mary,
+full of Grace,
+the Lord is with thee.
+Blessed art thou among women,
+and blessed is the fruit
+of thy womb, Jesus.
+Holy Mary,
+Mother of God,
+pray for us sinners now,
+and at the hour of death.
+Amen.
+</p>		
+					</div>	
+
+
+						
+					
+<div data-role='collapsible'>
+					<h3>Glory Be</h3>
+<p>						
+Glory be to the Father,
+and to the Son,
+and to the Holy Spirit.
+As it was in the beginning,
+is now,
+and ever shall be,
+world without end.
+Amen.
+</p>
+</div>	
+
+
+	
+					
+					
+
+					
+<div data-role='collapsible'>
+
+
+					<h3>Guardian Angel Prayer</h3>
+<p>						
+Angel of God,
+my guardian dear,
+To whom God's love
+commits me here,
+Ever this day,
+be at my side,
+To light and guard,
+Rule and guide.
+Amen.
+</p>
+	</div>	
+
+
+<div data-role='collapsible'>
+					<h3>St. Michael the Archangel</h3>
+					
+<p>						
+St. Michael the Archangel,
+defend us in battle.
+Be our defense against the wickedness and snares of the Devil.
+May God rebuke him, we humbly pray,
+and do thou,
+O Prince of the heavenly hosts,
+by the power of God,
+thrust into hell Satan,
+and all the evil spirits,
+who prowl about the world
+seeking the ruin of souls. Amen.
+</p>
+
+	</div>	
+
+
+
+
+
+<div data-role='collapsible'>
+					<h3>Come Holy Spirit</h3>
+					
+<p>						
+Come, Holy Spirit, fill the hearts of Thy faithful and enkindle in them the fire of Thy love.
+</p>
+<p>
+<strong>Leader:</strong> Send forth Thy Spirit and they shall be created. <br>
+<strong>Response:</strong> And Thou shalt renew the face of the earth.
+</p>
+<p>
+Let us pray. O God, Who didst instruct the hearts of the faithful by the light of the Holy Spirit, grant us in the same Spirit to be truly wise, and ever to rejoice in His consolation. Through Christ our Lord.
+</p>
+
+
+	</div>	
+	
+	
+	
+
+<div data-role='collapsible'>
+					<h3>Memorare</h3>
+<p>					
+Remember, O most gracious Virgin Mary, that never was it known that anyone who fled to thy protection, implored thy help, or sought thine intercession was left unaided.
+Inspired by this confidence, I fly unto thee, O Virgin of virgins, my mother; to thee do I come, before thee I stand, sinful and sorrowful. O Mother of the Word Incarnate, despise not my petitions, but in thy mercy hear and answer me. Amen.	
+
+</div>
+
+
+
+
+
+	
+	
+
+	
+	<div data-role='collapsible'>
+					<h3>Hail Holy Queen</h3>
+
+	
+	<p>
+	Hail, holy Queen, mother of mercy, our life, our sweetness, and our hope. To thee do we cry, poor banished children of Eve. To thee do we send up our sighs mourning and weeping in this valley of tears. Turn then, most gracious advocate, thine eyes of mercy toward us, and after this our exile show us the blessed fruit of thy womb, Jesus. O clement, O loving, O sweet Virgin Mary.
+
+Pray for us, O Holy Mother of God.
+
+That we may be made worthy of the promises of Christ.
+</p>
+</div>
+
+
+
+
+
+<div data-role='collapsible'>
+					<h3>The Rosary</h3>
+
+<p>
+<strong>The Rosary is prayed in the following manner:
+</strong>
+<ol>
+<li>Make the Sign of the Cross: In the Name of the Father, and of the Son and of the Holy Spirit.</li>
+<li>Pray the Apostle's Creed.</li>
+<li>Pray one Our Father, One Hail Mary, and One Glory Be.</li>
+<li>Pray each of the five 'decades' of the Rosary. A decade consists one one Our Father, ten Hail Marys, and one Glory Be. While praying the ten Hail Mary's for each of the five decades, you may want to meditate on the mysteries outlined below. Each set of mysteries offers one meditation for each of the five decades of the Rosary. </li>
+
+<li>The Rosary ends by praying the Hail Holy Queen, also found above.</li>
+</ol>
+
+</p>
+
+
+<h4>Joyful Mysteries</h4>
+<ol>
+<li> The Annunciation </li>
+<li>  The Visitation </li>
+<li>  The Nativity </li>
+<li>  The Presentation </li>
+<li> The Finding of Jesus in the Temple </li>
+
+</ol>
+
+
+
+<h4>Sorrowful Mysteries</h4>
+<ol> 
+<li> The Agony in the Garden </li>
+<li>  The Scourging at the Pillar </li>
+<li> The Crowning with Thorns </li>
+<li> The Carrying of the Cross </li>
+<li> The Crucifixion </li>
+
+</ol>
+
+
+
+<h4>Glorious Mysteries</h4>
+<ol> 
+<li> The Resurrection </li>
+<li>  The Ascension </li>
+<li> The Descent of the Holy Spirit</li>
+<li> The Assumption of the Blessed Virgin Mary </li>
+<li> The Coronation of the Blessed Virgin Mary </li>
+
+</ol>
+
+
+<h4>Luminous Mysteries</h4>
+<ol> 
+<li>  The Baptism in the Jordan </li>
+<li>  The Wedding at Cana </li>
+<li> Proclamation of the Kingdom</li>
+<li> The Transfiguration </li>
+<li> Institution of the Eucharist </li>
+
+</ol>
+
+</div>
+
+<div data-role='collapsible'>
+					<h3>Magnificat</h3>
+					<p>
+My soul proclaims the greatness of the Lord,
+my spirit rejoices in God my Savior
+for he has looked with favor on his lowly servant.
+From this day all generations will call me blessed:
+the Almighty has done great things for me,
+and holy is his Name.
+</p><p>
+He has mercy on those who fear him
+in every generation.
+He has shown the strength of his arm,
+he has scattered the proud in their conceit.<p>
+</p><p>
+He has cast down the mighty from their thrones,
+and has lifted up the lowly.
+He has filled the hungry with good things,
+and the rich he has sent away empty.
+</p><p>
+He has come to the help of his servant Israel
+for he remembered his promise of mercy,
+the promise he made to our fathers,
+to Abraham and his children forever. 
+</p>
+
+<p>
+(Lk 1:46-55)
+</p>
+	</div>
+
+<div data-role='collapsible'>
+					<h3>Apostle's Creed</h3>
+					
+<p>						
+I believe in God,<br>
+the Father almighty,<br>
+Creator of heaven and earth,<br>
+<p>	
+and in Jesus Christ, his only Son, our Lord,<br>
+who was conceived by the Holy Spirit,<br>
+born of the Virgin Mary,<br>
+suffered under Pontius Pilate,<br>
+was crucified, died and was buried;<br>
+he descended into hell;<br>
+on the third day he rose again from the dead;<br>
+he ascended into heaven,<br>
+and is seated at the right hand of God the Father almighty;<br>
+from there he will come to judge the living and the dead.<br>
+<p>	
+I believe in the Holy Spirit,<br>
+the holy catholic Church,<br>
+the communion of saints,<br>
+the forgiveness of sins,<br>
+the resurrection of the body,<br>
+and life everlasting.<br> Amen.
+
+Amen.
+</p>
+
+
+</div>	
+
+
+<div data-role='collapsible'>
+					<h3>Nicene Creed</h3>
+					
+<p>						
+I believe in one God, <br>
+the Father almighty, <br>
+maker of heaven and earth, <br>
+of all things visible and invisible. <br>
+<p>
+I believe in one Lord Jesus Christ, <br>
+the Only Begotten Son of God, <br>
+born of the Father before all ages. <br>
+God from God, Light from Light, <br>
+true God from true God, <br>
+begotten, not made, consubstantial with the Father; <br>
+through him all things were made. <br>
+For us men and for our salvation <br>
+he came down from heaven, <br>
+and by the Holy Spirit was incarnate of the Virgin Mary,<br>
+and became man.<br>
+For our sake he was crucified under Pontius Pilate,<br>
+he suffered death and was buried,<br>
+and rose again on the third day<br>
+in accordance with the Scriptures.<br>
+He ascended into heaven<br>
+and is seated at the right hand of the Father.<br>
+He will come again in glory<br>
+to judge the living and the dead<br>
+and his kingdom will have no end.<br>
+<p>
+I believe in the Holy Spirit, the Lord, the giver of life,<br>
+who proceeds from the Father and the Son,<br>
+who with the Father and the Son is adored and glorified,<br>
+who has spoken through the prophets.<br>
+<p>
+I believe in one, holy, catholic and apostolic Church.<br>
+I confess one Baptism for the forgiveness of sins<br>
+and I look forward to the resurrection of the dead<br>
+and the life of the world to come. Amen.<br>
+</p>
+Amen.
+
+
+
+</div>	
+
+
+
+
+
+
+
+<div data-role='collapsible'>
+					<h3>Prayer for Vocations</h3>
+
+<p>
+O Holy Spirit, Spirit of wisdom and divine love, impart Your knowledge, understanding, and counsel to youth that they may know the vocation wherein they can best serve God. Give them courage and strength to follow God's holy will. Guide their uncertain steps, strengthen their resolutions, shield their chastity, fashion their minds, conquer their hearts, and lead them to the vineyards where they will labor in God's holy service.
+Amen.
+</p>
+</div>
+
+
+
+
+<div data-role='collapsible' >
+					<h3>Te Deum</h3>
+<p>
+O God, we praise Thee, and acknowledge Thee to be the supreme Lord.
+Everlasting Father, all the earth worships Thee.
+All the Angels, the heavens and all angelic powers,
+All the Cherubim and Seraphim, continuously cry to Thee:
+Holy, Holy, Holy, Lord God of Hosts!
+Heaven and earth are full of the Majesty of Thy glory.
+The glorious choir of the Apostles,
+The wonderful company of Prophets,
+The white-robed army of Martyrs, praise Thee.
+Holy Church throughout the world acknowledges Thee:
+The Father of infinite Majesty;
+Thy adorable, true and only Son;
+Also the Holy Spirit, the Comforter.
+O Christ, Thou art the King of glory!
+Thou art the everlasting Son of the Father.
+When Thou tookest it upon Thyself to deliver man,
+Thou didst not disdain the Virgin's womb.
+Having overcome the sting of death, Thou opened the Kingdom of Heaven to all
+believers.
+Thou sitest at the right hand of God in the glory of the Father.
+We believe that Thou willst come to be our Judge.
+We, therefore, beg Thee to help Thy servants whom Thou hast redeemed with Thy
+Precious Blood.
+Let them be numbered with Thy Saints in everlasting glory.
+</p>
+</div>
+
+
+
+	<div data-role='collapsible' >
+					<h3>Make Me a Channel of Your Peace</h3>
+
+<p>
+Lord, make me a channel of thy peace,
+that where there is hatred, I may bring love;
+that where there is wrong,
+ I may bring the spirit of forgiveness;
+that where there is discord, I may bring harmony;
+that where there is error, I may bring truth;
+that where there is doubt, I may bring faith;
+that where there is despair, I may bring hope;
+that where there are shadows, I may bring light;
+that where there is sadness, I may bring joy.
+Lord, grant that I may seek rather to 
+comfort than to be comforted;
+to understand, than to be understood;
+to love, than to be loved.
+For it is by self-forgetting that one finds.
+It is by forgiving that one is forgiven.
+It is by dying that one awakens to Eternal Life.
+
+<br><br>
+
+- St. Francis of Assissi
+</p>
+
+
+
+</div><!--end St. Francis Prayer--->
+
+
+
+
+</div><!--end collapsible set--->
+
+
+	
+  
+
+
+					
+				
+
+
+	
+
+
+
+	
+
+	
+
+    </div><!-- /content padd -->
+	</div><!-- /content -->
+
+
+
+
+
+   
+   
+	
+	<!-- footer -->
+<script src="http://web4uonline.com/stanford/inc-footer.js"></script>
+	<!-- /footer -->
+
+	
+</div><!-- /page -->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////END PRAYERS/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+
+
+
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////////////////////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--////////////////////////////////////////////////////////////////////////////////////////-->			
+<!--////////////////////////////////////END PAGES///////////////////////////////////////////-->
+
+
+<!--plugin scripts-->
+    
+<script src="childbrowser.js"></script>
+
+
+
+
+<!--------------------------------------FOR PUSH------------------------------------->
+	
+   <!--<script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"></script>-->
+        
+      
+        <script type="text/javascript" src="PushNotification.js"></script>
+        <script src="pushwoosh.js" type="text/javascript"></script>
+        
+        <script type="text/javascript">
+            var pushNotification;
+            
+            function onDeviceReady() {
+                $("#app-status-ul").append('<li>deviceready event received</li>');
+                
+				document.addEventListener("backbutton", function(e)
+				{
+                	$("#app-status-ul").append('<li>backbutton event received</li>');
+  					
+      				if( $("#home").length > 0)
+					{
+						// call this to get a new token each time. don't call it to reuse existing token.
+						//pushNotification.unregister(successHandler, errorHandler);
+						e.preventDefault();
+						navigator.app.exitApp();
+					}
+					else
+					{
+						navigator.app.backHistory();
+					}
+				}, false);
+
+				try 
+				{ 
+                	pushNotification = window.plugins.pushNotification;
+                	if (device.platform == 'android' || device.platform == 'Android') {
+						$("#app-status-ul").append('<li>registering android</li>');
+						
+						
+						
+                    	pushNotification.register(successHandler, errorHandler, {"senderID":"494325727005","ecb":"onNotificationGCM"});		// required!
+					} else {
+						$("#app-status-ul").append('<li>registering iOS</li>');
+                    	pushNotification.register(tokenHandler, errorHandler, {"badge":"true","sound":"true","alert":"true","ecb":"onNotificationAPN"});	// required!
+                	}
+                }
+				catch(err) 
+				{ 
+					txt="There was an error on this page.\n\n"; 
+					txt+="Error description: " + err.message + "\n\n"; 
+					alert(txt); 
+				} 
+            }
+            
+            // handle APNS notifications for iOS
+            function onNotificationAPN(e) {
+                if (e.alert) {
+                     $("#app-status-ul").append('<li>push-notification: ' + e.alert + '</li>');
+                     navigator.notification.alert(e.alert);
+                }
+                    
+                if (e.sound) {
+                    var snd = new Media(e.sound);
+                    snd.play();
+                }
+                
+                if (e.badge) {
+                    pushNotification.setApplicationIconBadgeNumber(successHandler, e.badge);
+                }
+            }
+            
+            // handle GCM notifications for Android
+            
+
+///////////////////////////////////PUSHWOOSH FOR ANDROID/////////////////////////////////////////////////////            
+            
+          // handle GCM notifications for Android
+ function onNotificationGCM(e) {
+     switch( e.event )
+     {
+         case 'registered':
+         if ( e.regid.length > 0 )
+         {
+             // Your GCM push server needs to know the regID before it can push to this device
+             // here is where you might want to send it the regID for later use.
+             PushWoosh.appCode = "48CA6-0FD02";
+             PushWoosh.register(e.regid, function(data) {
+                     //    alert("PushWoosh register success: " + JSON.stringify(data));
+                     }, function(errorregistration) {
+                     //    alert("Push Connection Error" +  errorregistration);
+                     });
+ 
+         }
+         break;                    
+///////////////////////////////////PUSHWOOSH FOR ANDROID/////////////////////////////////////////////////////                      
+                    
+                    case 'message':
+                    	// if this flag is set, this notification happened while we were in the foreground.
+                    	// you might want to play a sound to get the user's attention, throw up a dialog, etc.
+                    	if (e.foreground)
+                    	{
+							$("#app-status-ul").append('<li>--INLINE NOTIFICATION--' + '</li>');
+
+							// if the notification contains a soundname, play it.
+							var my_media = new Media("/android_asset/www/"+e.soundname);
+							my_media.play();
+						}
+						else
+						{	// otherwise we were launched because the user touched a notification in the notification tray.
+							if (e.coldstart)
+								$("#app-status-ul").append('<li>--COLDSTART NOTIFICATION--' + '</li>');
+							else
+							$("#app-status-ul").append('<li>--BACKGROUND NOTIFICATION--' + '</li>');
+						}
+
+						$("#app-status-ul").append('<li>MESSAGE -> MSG: ' + e.payload.message + '</li>');
+						$("#app-status-ul").append('<li>MESSAGE -> MSGCNT: ' + e.payload.msgcnt + '</li>');
+                    break;
+                    
+                    case 'error':
+						$("#app-status-ul").append('<li>ERROR -> MSG:' + e.msg + '</li>');
+                    break;
+                    
+                    default:
+						$("#app-status-ul").append('<li>EVENT -> Unknown, an event was received and we do not know what it is</li>');
+                    break;
+                }
+            }
+     
+/////////////////////////////////PUSHWOOSH INSERT FOR APPLE //////////////////////////////////////////
+       
+            function tokenHandler (result) {
+               
+                // Your iOS push server needs to know the token before it can push to this device
+                // here is where you might want to send it the token for later use.
+               PushWoosh.appCode = "48CA6-0FD02";
+    		PushWoosh.register(result, function(data) {
+                    //    alert("PushWoosh register success: " + JSON.stringify(data));
+                    }, function(errorregistration) {
+                    //    alert("Couldn't register with PushWoosh" +  errorregistration);
+                    });
+                    
+            }         
+                    
+/////////////////////////////////PUSHWOOSH INSERT FOR APPLE //////////////////////////////////////////                
+                
+           
+
+            function successHandler (result) {
+                $("#app-status-ul").append('<li>success:'+ result +'</li>');
+            }
+            
+            function errorHandler (error) {
+                $("#app-status-ul").append('<li>error:'+ error +'</li>');
+            }
+            
+			document.addEventListener('deviceready', onDeviceReady, true);
+
+         </script>  
+  
+
+
+
+<!---------------------------------------END PUSH--------------------------------------->
+
+
+
+
+</body>
+</html>
